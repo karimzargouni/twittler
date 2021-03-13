@@ -1,9 +1,43 @@
 .tweet {
     height: 248px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 22px;
+    border: 5px solid peru;
+    text-align: center;
+}
+
+#tweets{
+  width: 100%;
+}
+
+#newtweet {
+  width: 50%;
+  margin: 0 auto;
+  ;
+}
+
+#t {
+  color:#f1f1f1;
+}
+
+#button2{
+  font-size: 28px;
+  border-radius: 4px;
+  background-color: #f4511e;
+  padding: 20px;
+  width: 200px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.newTweet {
+  height: 248px;
     width: 894px;
     border-radius: 22px;
     border: 5px solid peru;
     text-align: center;
+    color: White
 }
 
 .button {
@@ -91,4 +125,8 @@ body {
 
   #xl {
       color: white
+  }
+
+  .part {
+    color:blue
   }
