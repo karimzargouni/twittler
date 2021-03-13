@@ -9,21 +9,34 @@
     <script>
       
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="jquery.js"></script>
+  <script src="data_generator.js"></script>
+  <script src="main.js" defer></script>
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
 
-      });
+</head>
 
-    </script>
-  </body>
+<body class="bg">
+<span class="part"></span>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Log In</a>
+    <a href="#">Settings</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <span id='xl' style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <h1 id=upper>Twittler</h1>
+  <button class="button" style="vertical-align:middle"  onclick="display()"><span>Tweet </span></button> 
+  <h1></h1>
+  <label for="newtweet" id="t">Add new Tweet</label>
+  <input type="text" id="newtweet" name="Add new Tweet">
+  <button id="button2" onclick="add()" > add</button>
+  <div id="result"></div>
+  <h2></h2>
+  <div id='tweets' class='text'></div>
+</body>
+
 </html>
